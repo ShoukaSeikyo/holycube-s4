@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "group": "block",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:terracotta"
+    },
+    "X": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "minecraft:clay",
+    "count": 8
+  }
+}

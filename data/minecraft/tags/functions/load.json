@@ -1,0 +1,13 @@
+{
+	"values": [
+    "holycube:init",
+    "holycube_afk:init",
+    "holycube_bed:init",
+    "holycube_blaze:init",
+    "holycube_clock:init",
+    "holycube_magnet:init",
+    "holycube_phantom:init",
+    "holycube_time:init",
+    "holycube_void:init"
+	]
+}

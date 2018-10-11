@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:red_sandstone_slab"
+        },
+        {
+            "item": "minecraft:red_sandstone_slab"
+        },
+        {
+            "item": "minecraft:red_sandstone_slab"
+        },
+        {
+            "item": "minecraft:red_sandstone_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:smooth_red_sandstone",
+        "count": 2
+    }
+}

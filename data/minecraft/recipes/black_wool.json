@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "group": "wool",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "X": {
+      "item": "minecraft:ink_sac"
+    }
+  },
+  "result": {
+    "item": "minecraft:black_wool",
+    "count": 8
+  }
+}

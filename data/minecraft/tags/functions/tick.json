@@ -1,0 +1,13 @@
+{
+	"values": [
+    "holycube:loop",
+    "holycube_afk:loop",
+    "holycube_bed:loop",
+    "holycube_blaze:loop",
+    "holycube_clock:loop",
+    "holycube_magnet:loop",
+    "holycube_phantom:loop",
+    "holycube_time:loop",
+    "holycube_void:loop"
+	]
+}

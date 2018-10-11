@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:trapdoors",
+    "#minecraft:stairs",
+    "#minecraft:slabs",
+    "#minecraft:doors",
+    "#minecraft:corals",
+
+    "minecraft:water",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass",
+
+    "minecraft:glass_pane",
+    "minecraft:black_stained_glass_pane",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:red_stained_glass_pane",
+    "minecraft:white_stained_glass_pane",
+    "minecraft:yellow_stained_glass_pane",
+
+    "minecraft:acacia_fence",
+    "minecraft:birch_fence",
+    "minecraft:dark_oak_fence",
+    "minecraft:jungle_fence",
+    "minecraft:nether_brick_fence",
+    "minecraft:oak_fence",
+    "minecraft:spruce_fence",
+
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "minecraft:ender_chest",
+
+    "minecraft:iron_bars",
+
+    "minecraft:ladder",
+
+    "minecraft:cobblestone_wall",
+    "minecraft:mossy_cobblestone_wall",
+
+    "minecraft:sign",
+    "minecraft:conduit",
+    "minecraft:sea_pickle"
+  ]
+}

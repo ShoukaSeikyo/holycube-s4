@@ -1,6 +1,6 @@
 #config
 ## #HC4_AFK#p -> Percentage required to pass the night.
-execute unless score #HC4_AFK#p hc4-config matches 0.. run scoreboard players set #HC4_AFK#p hc4-config 33
+execute unless score #HC_Bed#p hc4-config matches 0.. run scoreboard players set #HC_Bed#p hc4-config 33
 
 scoreboard objectives add hc4.bed dummy
 scoreboard players set #HC_Bed#cache hc4.bed 0

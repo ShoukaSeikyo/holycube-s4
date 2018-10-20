@@ -6,7 +6,7 @@ scoreboard players set #HC_Bed#asleep hc4.bed 0
 scoreboard players set @a[nbt={Sleeping:0b}] hc4.bed 0
 execute as @a[nbt={Sleeping:1b}] store result score @s hc4.bed run data get entity @s SleepTimer
 
-execute as @a[scores={hc4.bed=1}] run tellraw @a [{"color":"green","selector":"@p"}, {"color":"white","text":" est maintenant dans un lit."}]
+execute as @a[scores={hc4.bed=1},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..}]"}, {"color":"white","text":" sont maintenant dans un lit."}]
 execute as @a[scores={hc4.bed=30..}] run scoreboard players add #HC_Bed#asleep hc4.bed 1
 
 execute unless score #HC_Bed#total hc4.bed = #HC_Bed#cache hc4.bed run function holycube_bed:logic/check

@@ -1,18 +1,16 @@
-# Draw
-#execute at @s run particle minecraft:block iron_block ~ ~ ~ 0.0 0.0 0.0 5.0 1000 force
+execute store result score #VW VW.posX run data get entity @s Pos[0] 1000000
+execute store result score #VW VW.posY run data get entity @s Pos[1] 1000000
+execute store result score #VW VW.posZ run data get entity @s Pos[2] 1000000
+execute as @e[tag=!vw_magnet,tag=!vw_magneted,type=minecraft:item,distance=..5] at @s if block ~ ~ ~ #holycube_magnet:waterlogged run tag @s add vw_magnet
 
-# Position BH
-execute as @s run function holycube_magnet:logic/motion
-#execute as @e[type=minecraft:item,distance=0..5] at @s if block ~ ~ ~ #holycube_magnet:waterlogged run function holycube_magnet:logic/motion
-execute as @e[type=minecraft:item,distance=0..5,tag=!VW_Magnet] at @s if block ~ ~ ~ #holycube_magnet:waterlogged run function holycube_magnet:logic/add_magnet
+execute as @e[tag=vw_magnet,tag=!vw_magneted] run function holycube_magnet:logic/pos
 
-# Find distance
-#tag @e[type=minecraft:item,distance=0..5] add VW_Magnet
-scoreboard players operation @e[tag=VW_Magnet] hc4.motionX -= @s hc4.motionX
-scoreboard players operation @e[tag=VW_Magnet] hc4.motionY -= @s hc4.motionY
-scoreboard players operation @e[tag=VW_Magnet] hc4.motionZ -= @s hc4.motionZ
+execute as @e[tag=vw_magnet,tag=!vw_magneted] store result entity @s Motion[0] double -0.0000001 run scoreboard players operation @s VW.posX -= #VW VW.posX
+execute as @e[tag=vw_magnet,tag=!vw_magneted] store result entity @s Motion[1] double -0.0000001 run scoreboard players operation @s VW.posY -= #VW VW.posY
+execute as @e[tag=vw_magnet,tag=!vw_magneted] store result entity @s Motion[2] double -0.0000001 run scoreboard players operation @s VW.posZ -= #VW VW.posZ
+execute as @e[tag=vw_magnet,tag=!vw_magneted] run data merge entity @s {NoGravity:1}
+tag @e[tag=vw_magnet] add vw_magneted
 
-execute as @e[tag=VW_Magnet] store result entity @s Motion[0] double -0.0000001 run scoreboard players get @s hc4.motionX
-execute as @e[tag=VW_Magnet] store result entity @s Motion[1] double -0.0000001 run scoreboard players get @s hc4.motionY
-execute as @e[tag=VW_Magnet] store result entity @s Motion[2] double -0.0000001 run scoreboard players get @s hc4.motionZ
-execute as @e[tag=VW_Magnet] run data merge entity @s {NoGravity:1}
+scoreboard players reset #VW VW.posX
+scoreboard players reset #VW VW.posY
+scoreboard players reset #VW VW.posZ

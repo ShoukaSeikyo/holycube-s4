@@ -1,8 +1,10 @@
 #config
 
+## #HC4_AFK#t -> Number of minutes before a player becomes AFK
 ## #HC4_AFK#s -> Players will gain saturation while AFK to not starve
 ## #HC4_AFK#i -> Players will gain a resistance effect of level 5 to become invulnerable while AFK. They will still move though.
 
+execute unless score #HC4_AFK#t hc4-config matches 0.. run scoreboard players set #HC4_AFK#t hc4-config 5
 execute unless score #HC4_AFK#s hc4-config matches 0..1 run scoreboard players set #HC4_AFK#s hc4-config 1
 execute unless score #HC4_AFK#i hc4-config matches 0..1 run scoreboard players set #HC4_AFK#i hc4-config 1
 

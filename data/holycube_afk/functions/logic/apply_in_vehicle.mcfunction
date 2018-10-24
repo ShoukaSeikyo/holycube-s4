@@ -1,6 +1,3 @@
-#pos
-scoreboard players add @a[scores={hc4.afk=0..99}] hc4.afk 1
-
 execute unless score @s hc4.ofkX = @s hc4.vehicleR run scoreboard players set @s hc4.afk 0
 execute unless score @s hc4.ofkY = @s hc4.vehicleY run scoreboard players set @s hc4.afk 0
 

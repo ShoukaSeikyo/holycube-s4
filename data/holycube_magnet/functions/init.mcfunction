@@ -1,3 +1,5 @@
-scoreboard objectives add hc4.motionX dummy
-scoreboard objectives add hc4.motionY dummy
-scoreboard objectives add hc4.motionZ dummy
+scoreboard objectives add VW.posX dummy
+scoreboard objectives add VW.posY dummy
+scoreboard objectives add VW.posZ dummy
+
+### Everything is stolen from the Vanilla-Waifu !!!

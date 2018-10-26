@@ -1,6 +1,7 @@
 scoreboard players set #HC4_AFK#t_tmp hc4-config 12
 scoreboard players operation #HC4_AFK#t_tmp hc4-config *= #HC4_AFK#t hc4-config
 
+scoreboard players add @a[nbt={playerGameType:0}] hc4.afk 1
 execute as @a[nbt={playerGameType:0},scores={hc4.vehicle=1}] run function holycube_afk:logic/apply_in_vehicle
 execute as @a[nbt={playerGameType:0},scores={hc4.vehicle=0}] run function holycube_afk:logic/apply_on_foot
 execute as @a[nbt=!{playerGameType:0}] run tag @s remove hc_afk

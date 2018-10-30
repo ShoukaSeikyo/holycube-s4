@@ -1,7 +1,7 @@
 scoreboard players add #HC4_Void#o hc4-config 1
 scoreboard players operation #HC4_Void#o hc4-config %= HC4Void hc4-neg-bool
 
-execute if score #HC4_Void#o hc4-config matches 1 run tellraw @s [{"text":"Players in the Overworld at -20 or below will be send to the Nether at 285","color":"green"}]
-execute if score #HC4_Void#o hc4-config matches 2 run tellraw @s [{"text":"Players in the Overworld at -20 or below will be send to the Overworld at 285","color":"green"}]
-execute if score #HC4_Void#o hc4-config matches 3 run tellraw @s [{"text":"Players in the Overworld at -20 or below will be send to the End at 285","color":"green"}]
-execute if score #HC4_Void#o hc4-config matches 0 run tellraw @s [{"text":"Players in the void won't be sent to the Overworld","color":"red"}]
+execute if score #HC4_Void#o hc4-config matches 1 run tellraw @s [{"text":"Les joueurs dans l'Overworld à la couche -20 ou moins seront envoyés au Nether à la couche 285","color":"green"}]
+execute if score #HC4_Void#o hc4-config matches 2 run tellraw @s [{"text":"Les joueurs dans l'Overworld à la couche -20 ou moins seront envoyés à l'Overworld à la couche 285","color":"green"}]
+execute if score #HC4_Void#o hc4-config matches 3 run tellraw @s [{"text":"Les joueurs dans l'Overworld à la couche -20 ou moins seront envoyés à l'End à la couche 285","color":"green"}]
+execute if score #HC4_Void#o hc4-config matches 0 run tellraw @s [{"text":"Les joueurs dans le vide ne seront pas envoyés dans une autre dimention","color":"red"}]

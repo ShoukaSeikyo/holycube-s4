@@ -1,0 +1,34 @@
+[
+  {
+    "name": "AFK",
+    "dir": "holycube_afk"
+  },
+  {
+    "name": "Bed",
+    "dir": "holycube_bed"
+  },
+  {
+    "name": "Blaze",
+    "dir": "holycube_blaze"
+  },
+  {
+    "name": "Clock",
+    "dir": "holycube_clock"
+  },
+  {
+    "name": "Magnet",
+    "dir": "holycube_magnet"
+  },
+  {
+    "name": "Phantom",
+    "dir": "holycube_phantom"
+  },
+  {
+    "name": "Time",
+    "dir": "holycube_time"
+  },
+  {
+    "name": "Void",
+    "dir": "holycube_void"
+  }
+]

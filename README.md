@@ -16,7 +16,7 @@ La liste des fonctionnalités incluses:
 ## Installation
 Tous les datapacks s'installent dans le dossier `world/datapacks/` d'une sauvegarde MineCraft. Cet article du wiki gamepedia de MineCraft vous aidera plus en profondeur: [Tutoriels/Installer un pack de données](https://minecraft-fr.gamepedia.com/Tutoriels/Installer_un_pack_de_donn%C3%A9es).
 
---
+---
 
 ## Problèmes récurrents
 

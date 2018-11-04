@@ -3,4 +3,4 @@ execute unless score @s hc4.ofkY = @s hc4.vehicleY run scoreboard players set @s
 
 scoreboard players operation @s hc4.ofkX = @s hc4.vehicleR
 scoreboard players operation @s hc4.ofkY = @s hc4.vehicleY
-scoreboard players set @s hc4.posZ 0
+scoreboard players set @s hc4.ofkZ 0

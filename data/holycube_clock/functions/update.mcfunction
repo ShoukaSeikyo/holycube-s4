@@ -23,7 +23,7 @@ execute if score #HC4_CLOCK#time hc4.clock matches 23000.. run bossbar set holyc
 #Add tag to players
 tag @a[tag=hc4.clock] remove hc4.clock
 
-execute if score #HC4_CLOCK#w hc4-config matches 1.. run function holycube_clock:logic/show_without_worlds
-execute if score #HC4_CLOCK#w hc4-config matches ..0 run function holycube_clock:logic/show_with_worlds
+execute if score #HC4_CLOCK#w hc4-config matches 1.. run function holycube_clock:without_worlds
+execute if score #HC4_CLOCK#w hc4-config matches ..0 run function holycube_clock:with_worlds
 
 bossbar set holycube:clock players @a[tag=hc4.clock]

@@ -10,7 +10,7 @@ execute as @a[scores={hc4.bed=30..}] run scoreboard players add #HC_Bed#asleep h
 execute if score #HC_Bed#asleep hc4.bed matches 1 as @a[scores={hc4.bed=30},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..}]"}, {"color":"white","text":" est maintenant dans un lit."}]
 execute if score #HC_Bed#asleep hc4.bed matches 2.. as @a[scores={hc4.bed=30},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..}]"}, {"color":"white","text":" sont maintenant dans un lit."}]
 
-execute unless score #HC_Bed#total hc4.bed = #HC_Bed#cache hc4.bed run function holycube_bed:logic/check
+execute unless score #HC_Bed#total hc4.bed = #HC_Bed#cache hc4.bed run function holycube_bed:check
 
 execute store result bossbar hc4.bed max run scoreboard players get #HC_Bed#req hc4.bed
 execute store result bossbar hc4.bed value run scoreboard players get #HC_Bed#asleep hc4.bed

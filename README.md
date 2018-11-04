@@ -37,6 +37,8 @@ La plupart des configurations se modifient avec un pseudonyme pour le scoreboard
 
 ### AFK
 - **#HC4_AFK#t** *int* `défaut: 5` - Durée en minutes avant d'être considéré comme AFK.
+- **#HC4_AFK#m** *bool* `défaut: 1` - Afficher le message lorsqu'on joueur change de statut AFK.
+- **#HC4_AFK#g** *bool* `défaut: 1` - Afficher le gros titre "AFK" lorsque le joueur est AFK.
 - **#HC4_AFK#s** *bool* `défaut: 1` - Ajoute un effet de saturation lorsque le joueur est AFK.
 - **#HC4_AFK#i** *bool* `défaut: 1` - Ajoute un effete de résistance lorsque le joueur est AFK.
 

@@ -4,11 +4,14 @@ execute as @a[nbt={playerGameType:0,Dimension:0},tag=!hc_afk] run scoreboard pla
 scoreboard players set #HC_Bed#asleep hc4.bed 0
 
 scoreboard players set @a[nbt={Sleeping:0b}] hc4.bed 0
-execute as @a[nbt={Sleeping:1b}] store result score @s hc4.bed run data get entity @s SleepTimer
+execute as @a[nbt={Sleeping:1b,playerGameType:0,Dimension:0}] store result score @s hc4.bed run data get entity @s SleepTimer
 
 execute as @a[scores={hc4.bed=30..}] run scoreboard players add #HC_Bed#asleep hc4.bed 1
 execute if score #HC_Bed#asleep hc4.bed matches 1 as @a[scores={hc4.bed=30},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..}]"}, {"color":"white","text":" est maintenant dans un lit."}]
-execute if score #HC_Bed#asleep hc4.bed matches 2.. as @a[scores={hc4.bed=30},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..}]"}, {"color":"white","text":" sont maintenant dans un lit."}]
+
+execute if score #HC_Bed#asleep hc4.bed matches 2.. as @a[scores={hc4.bed=30..},limit=1,sort=random] run tag @s add hc4_bed_last
+execute if score #HC_Bed#asleep hc4.bed matches 2.. as @a[scores={hc4.bed=30},limit=1] run tellraw @a [{"color":"green","selector":"@a[scores={hc4.bed=1..},tag=!hc4_bed_last]"}, " et ", {"color":"green","selector":"@a[scores={hc4.bed=1..},tag=hc4_bed_last]"}, {"color":"white","text":" sont maintenant dans un lit."}]
+tag @a[tag=hc4_bed_last] remove hc4_bed_last
 
 execute unless score #HC_Bed#total hc4.bed = #HC_Bed#cache hc4.bed run function holycube_bed:check
 
